@@ -1,6 +1,6 @@
 <?php
 
-$db = pg_connect('host=localhost dbname=Digitalisasi user=postgres password="sesuain ya ges"');
+$db = pg_connect('host=localhost dbname=db_tutor user=postgres password="  "');
 
 if( !$db ){
     die("Gagal terhubung dengan database: " . pg_connect_error());}
