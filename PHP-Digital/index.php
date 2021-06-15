@@ -20,7 +20,6 @@
 		<div class="container-fluid">
 		<ul class="nav navbar-nav">
 			<li class="active"><a href="index.php">Home</a></li>
-			<li><a href="listtutor.php"> List Tutor</a></li>
 			<li><a href="Form_daftar.php"> Pendaftaran</a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
@@ -28,5 +27,16 @@
 		</ul>
 	  </div>
 	 </nav>
+	 
+	<div class="d-flex flex-row">
+		<div><a href="Bio.php"><img src="./Template/Bio.jpg" style="width:20%"></a></div>
+	<div class="d-flex flex-row">
+		<div><a href="Fis.php"><img src="./Template/Fis.jpg" style="width:20%"></a></div>
+	<div class="d-flex flex-row">
+		<div><a href="Mbl.php"><img src="./Template/Mbl.jpg" style="width:20%"></a></div>
+	<div class="d-flex flex-row">
+		<div><a href="Kim.php"><img src="./Template/Kim.jpg" style="width:20%"></a></div>
+	<div class="d-flex flex-row">
+		<div><a href="Sad.php"><img src="./Template/Sad.jpg" style="width:20%"></a></div>
 	
-</body></html>
+	</body></html>
