@@ -16,4 +16,3 @@
 		else{
 			header('Location: index.php?status=gagal');}
 	}?>
-	
