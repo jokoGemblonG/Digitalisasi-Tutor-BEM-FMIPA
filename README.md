@@ -21,6 +21,8 @@ Mempermudah pendataan tutor dan tutee pada program tutor yang dilaksanakan oleh 
 1. Tutor dapat membuka kelas dan melihat upah yang didapat.
 2. Tutee dapat mencari kelas yang diinginkan sesuai dengan hari, waktu, mata kuliah, dan tutor yang diinginkannya.
 
+## ERD
+![Untitled Diagram](https://user-images.githubusercontent.com/85171587/122041298-fd4efa00-ce02-11eb-8908-6d667ee111d2.jpg)
 ##
 ![Bio](https://user-images.githubusercontent.com/85027718/122018346-f74e1e80-cdec-11eb-9944-ea3d6c8e7ca8.jpg)
 ![Fis](https://user-images.githubusercontent.com/85027718/122018355-fa490f00-cdec-11eb-90cf-d962db787063.jpg)
