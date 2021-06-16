@@ -1,3 +1,10 @@
+<?php
+	session_start();
+	if(isset($_SESSION['submit'])){
+		header("Location: index2.php");
+		exit;
+	}
+?>
 <head>
 	<title> Tutor Bem FMIPA</title>
 	<meta charset="utf-8">
@@ -6,14 +13,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
+<body>
 <header>
-		<h3> Situs Terpadu </h3>
-		<h2> Tutor Bem FMIPA </h2>
+		<h4 style='padding: 3px'> SITUS TERPADU </h4>
+		<h2 style='padding: 3px'> Tutor BEM FMIPA </h2>	
 </header>
-	<nav>
-		<div class="container-fluid">
+	<nav class= "navbar navbar-inverse">
+	<div class="container-fluid">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="index.php">Home</a></li>
+			<li class="active"><a href="index.php"> Home </a></li>
 		</ul>
 	  </div>
 	</nav>
@@ -33,5 +42,5 @@
     </div>
      
     <input type="submit" name="submit" class="btn btn-primary" value="submit">
-  </form>
+  </form></body>
 </html>
