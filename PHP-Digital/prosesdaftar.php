@@ -8,11 +8,16 @@
 		$email = $_POST['email'];
 		$paket = $_POST['paket'];
 		
-		$query = pg_query("INSERT INTO pendaftar (id_pendaftar, idk, nama_pendaftar, no_hp, email, paket) VALUES('$id_pendaftar','$IDK', '$nama', '$kontak', '$email', '$paket')");
-		
-		if($query == TRUE){
-			header('Location: index.php?status=sukses');
-			}
+		$query_cek = pg_fetch_array(pg_query("SELECT COUNT(*) FROM daftar_hadir WHERE id_pendaftar = '$id_pendaftar' AND idk = '$IDK'"));
+
+		if ($query_cek['count'] > 0) {
+			header('Location: index.php?status=gagal');
+		}
 		else{
-			header('Location: index.php?status=gagal');}
-	}?>
+			$query_p = pg_query("INSERT INTO pendaftar (id_pendaftar, nama_pendaftar, no_hp, email, paket) VALUES('$id_pendaftar', '$nama', '$kontak', '$email', '$paket')");
+			$query_dh = pg_query("INSERT INTO daftar_hadir (idk, id_pendaftar) VALUES('$IDK','$id_pendaftar')");
+			header('Location: index.php?status=sukses');
+		}
+		
+}
+?>
