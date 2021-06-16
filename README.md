@@ -24,4 +24,4 @@ Mempermudah pendataan tutor dan tutee pada program tutor yang dilaksanakan oleh 
 ## ERD
 ![Untitled Diagram](https://user-images.githubusercontent.com/85171587/122041298-fd4efa00-ce02-11eb-8908-6d667ee111d2.jpg)
 ## Diagram Skematik
-![122041298-fd4efa00-ce02-11eb-8908-6d667ee111d2](https://user-images.githubusercontent.com/85027718/122237785-cdc6ed00-cee9-11eb-9e9a-7fed06320830.jpg)
+![WhatsApp Image 2021-06-16 at 20 32 07](https://user-images.githubusercontent.com/85027718/122237940-ea632500-cee9-11eb-978a-5d221e601e56.jpeg)
