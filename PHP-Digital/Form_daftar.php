@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if(isset($_SESSION['submit'])){
+		header("Location: index2.php");
+		exit;
+	}
+?>
+
 <!DOCtype html>
 
 	<head>
@@ -8,22 +16,24 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</head>
+	
 	<header>
-		<h3> Situs Terpadu </h3>
-		<h2> Tutor Bem FMIPA </h2>
+		<h4 style='padding: 3px'> SITUS TERPADU </h4>
+		<h2 style='padding: 3px'> Tutor BEM FMIPA </h2>	
 	</header>
-	<nav>
+	
+	<nav class= "navbar navbar-inverse">
 		<div class="container-fluid">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="index.php">Home</a></li>
-			<li><a href="list tutor.php"> List Tutor</a></li>
-			<li><a href="Form_daftar.php"> Pendaftaran</a></li>
+			<li class="active"><a href="index.php"> Home </a></li>
+			<li><a href="Form_daftar.php"> Pendaftaran </a></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="login.php"> Login Tutor</a></li>
+			<li><a href="login.php"> Login (Tutor) </a></li>
 		</ul>
 	  </div>
 	 </nav>
+	 
 	<body>
 	
 		<h3 style="text-align:center;">Formulir Pendaftaran Peserta Tutor</h3>
@@ -50,13 +60,12 @@
 				<input type='email' name='email' placeholder='Email'>
 			</p>
 			<p>
-				<label for='paket'>Paket : </label>
+				</br>
+					<label><input type='radio' name='paket' value='A'>Paket A (Rp 15.000)</label>
 					</br>
-					<label><input type='radio' name='paket' value='A'>Paket A</label>
+					<label><input type='radio' name='paket' value='B'>Paket B (Rp 10.000)</label>
 					</br>
-					<label><input type='radio' name='paket' value='B'>Paket B</label>
-					</br>
-					<label><input type='radio' name='paket' value='C'>Paket C</label>
+					<label><input type='radio' name='paket' value='C'>Paket C &nbsp;&nbsp;(Rp 5.000)</label>
 			</p>
 			<p>
 				<input type='submit' value='daftar' name='daftar'/>
